@@ -1,0 +1,58 @@
+.Header {
+  font-family: "Raleway", sans-serif;
+
+  margin-top: 30px;
+  width: 100%;
+}
+
+#head {
+  font-weight: 700;
+  line-height: 41.6px;
+}
+
+.smallhead {
+  text-align: center;
+  size: 500px;
+  padding-bottom: 10px;
+  padding-top: 15px;
+}
+#smallhead {
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.shield {
+  width: 100%;
+  height: fit-content;
+  background-color: #1a73e8;
+  align-items: center;
+}
+
+.shieldandtext {
+  padding-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  width: 670px;
+  display: flex;
+}
+
+.shieldtext {
+  font-weight: 700;
+  line-height: 42px;
+  font-size: 28px;
+  color: white;
+  text-align: left;
+}
+
+#textundershield {
+  font-family: "Raleway", sans-serif;
+  color: white;
+
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 33px;
+  padding-bottom: 20px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");

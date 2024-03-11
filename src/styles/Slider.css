@@ -1,0 +1,99 @@
+.Slider {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  position: relative;
+  text-align: center;
+}
+
+.tabcontainer {
+  margin-top: 30px;
+}
+
+.bloc-tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.tabs {
+  padding: 20px 40px 5px;
+  text-align: left;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  background: white;
+  border: white;
+  cursor: pointer;
+}
+
+.active-tabs {
+  background: #4951fd;
+  color: white;
+}
+
+.content-tabs {
+  align-items: center;
+  border: 6px solid transparent;
+}
+
+.content-tabs.blue {
+  border-color: #4951fd;
+}
+
+.content-tabs.yellow {
+  border-color: #fbbc04;
+}
+
+.content-tabs.green {
+  border-color: #34a853;
+}
+
+.content-tabs.red {
+  border-color: #ea4335;
+}
+
+.content {
+  padding: 100px;
+  display: none;
+}
+
+.active-content {
+  display: block;
+}
+
+.arrow {
+  position: absolute;
+  top: 60%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.arrow:first-child {
+  left: -80px;
+}
+
+.arrow:last-child {
+  right: -80px;
+}
+
+.arrow img {
+  width: 30px;
+}
+
+.slidertwo {
+  color: black;
+  background-color: #fbbc04;
+}
+
+.sliderthree {
+  color: white;
+  background-color: #34a853;
+}
+
+.sliderfour {
+  color: white;
+  background-color: #ea4335;
+}
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");

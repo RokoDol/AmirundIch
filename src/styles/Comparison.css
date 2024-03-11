@@ -1,0 +1,92 @@
+.compareHeader {
+  font-family: "Inter", sans-serif;
+  text-align: center;
+}
+
+#compareText {
+  line-height: 30px;
+}
+
+.column {
+  float: left;
+}
+
+.left,
+.right {
+  width: 25%;
+}
+
+.middle {
+  width: 50%;
+}
+
+.column {
+  font-family: "Inter", sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.grid-row {
+  display: flex;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grid-item {
+  border-right: 1px solid grey;
+  border-left: 1px solid grey;
+  flex: 1;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 500;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.grid-item:first-child {
+  flex: 2;
+  border-left: 1px solid grey;
+}
+.grid-row:first-child {
+  border-bottom: 1px solid grey;
+  border-top: 1px solid grey;
+}
+
+.grid-row:last-child {
+  border-bottom: 1px solid grey;
+}
+
+.gridheader {
+  padding-top: 80px;
+  padding-bottom: 60px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 36px;
+}
+
+.GMEE {
+  font-family: "Inter", sans-serif;
+  color: white;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 56.35px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");

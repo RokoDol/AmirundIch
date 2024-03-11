@@ -1,0 +1,50 @@
+.faqRows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+.rowOne {
+  display: flex;
+  align-items: flex-start;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  padding: 30px;
+}
+
+.bigNumber {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 57.6px;
+  letter-spacing: 0.26px;
+  color: #9d96a8;
+  margin-right: 20px;
+}
+
+#rowHeader {
+  font-family: "Inter", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31.6px;
+  margin-bottom: 10px;
+}
+
+#rowText {
+  font-weight: 400;
+  color: #5a5365;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+#firstNum {
+  padding-left: 8px;
+}
+
+#numTwo {
+  padding-left: 1px;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
