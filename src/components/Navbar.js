@@ -24,6 +24,7 @@ function Navbar() {
         {" "}
         FAQ{" "}
       </Link>
+      <Link>Customer Login</Link>
       <Button />
     </div>
   );

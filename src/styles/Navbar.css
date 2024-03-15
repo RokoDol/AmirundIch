@@ -2,15 +2,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   color: white;
-  margin-left: 10%;
-  margin-right: 10%;
-  font-size: 16px;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-size: 14px;
   font-weight: bold;
   color: #242424;
-  padding-bottom: 20px;
-  padding-top: 30px;
+
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
@@ -24,6 +22,7 @@
 #logobtn {
   width: 40 px;
   height: 45.5px;
+  padding-right: 70px;
 }
 
 #btn {
