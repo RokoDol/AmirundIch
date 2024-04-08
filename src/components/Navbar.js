@@ -3,8 +3,11 @@ import Logo from "../assets/logo.png";
 import { Link } from "react-scroll";
 import "../styles/Navbar.css";
 import Button from "./Button.js";
+import { Routes, Route } from "react-router-dom";
+import LoggedIn from "../pages/LoggedIn.js";
+import LoginModule from "./LoginModule.js";
 
-function Navbar() {
+function Navbar({ isLoggedIn, handleLogin, handleLogout }) {
   return (
     <div className="navbar">
       <img src={Logo} id="logobtn" />
@@ -24,7 +27,10 @@ function Navbar() {
         {" "}
         FAQ{" "}
       </Link>
-      <Link>Customer Login</Link>
+      <Routes>
+        <Route path="/" element={<LoginModule handleLogin={handleLogin} />} />
+        <Route path="/LoggedIn" element={<LoggedIn />} />
+      </Routes>
       <Button />
     </div>
   );

@@ -4,6 +4,7 @@
   width: 60%;
   position: relative;
   text-align: center;
+  z-index: 2;
 }
 
 .tabcontainer {

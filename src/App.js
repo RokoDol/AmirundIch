@@ -1,34 +1,50 @@
-import "./App.css";
+import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  Routes,
-} from "react-router-dom";
-import Slider from "./pages/Slider.js";
-import Features from "./pages/Features.js";
-import Comparison from "./pages/Comparison.js";
-import Pricing from "./pages/Pricing.js";
-import FAQ from "./pages/FAQ.js";
-import Footer from "./components/Footer.js";
+import Slider from "./pages/Slider";
+import Features from "./pages/Features";
+import Comparison from "./pages/Comparison";
+import Pricing from "./pages/Pricing";
+import FAQ from "./pages/FAQ";
+import Footer from "./components/Footer";
+import LoggedIn from "./pages/LoggedIn";
 
 function App() {
-  return (
-    <div className="App">
-      <Router>
-        <Navbar />
-        <Home />
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-        <Slider></Slider>
-        <Features> </Features>
-        <Comparison></Comparison>
-        <Pricing />
-        <FAQ />
-        <Footer></Footer>
-      </Router>
-    </div>
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+  };
+
+  const handleLogout = () => {
+    setIsLoggedIn(false);
+  };
+
+  return (
+    <Router>
+      <div className="App">
+        {!isLoggedIn && (
+          <Navbar isLoggedIn={isLoggedIn} handleLogin={handleLogin} />
+        )}
+
+        {!isLoggedIn && (
+          <>
+            <Home />
+            <Slider />
+            <Features />
+            <Comparison />
+            <Pricing />
+            <FAQ />
+            <Footer />
+          </>
+        )}
+
+        <Routes>
+          {isLoggedIn && <Route path="/loggedIn" element={<LoggedIn />} />}
+        </Routes>
+      </div>
+    </Router>
   );
 }
 
