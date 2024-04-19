@@ -1,17 +1,28 @@
+// YourComponent.js
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { AgGridReact } from "ag-grid-react";
-import "ag-grid-community/styles/ag-grid.css";
-import "ag-grid-community/styles/ag-theme-alpine.css";
 
-const YourComponent = () => {
-  const [rowData, setRowData] = useState([]);
-
+const YourComponent = ({ onDataLoaded }) => {
   useEffect(() => {
     const fetchData = async () => {
       try {
         const response = await axios.get(
           "https://api.gmee.pro/api/getQueueStatus"
+        );
+        console.log("Data received:", response.data);
+        onDataLoaded(
+          response.data.map((item) => ({
+            cityField: item.cityField || "-",
+            countryField: item.countryField || "-",
+            keyWordField: item.keywordField || "-",
+            requestCreated: item.requestCreated || "-",
+            Status: item.status || "-",
+            Zipfield: item.zipField || "-",
+            additionalField1: "-",
+            additionalField2: "-",
+            additionalField3: "-",
+            additionalField4: "-",
+          }))
         );
       } catch (error) {
         console.error("Error fetching data:", error);
@@ -21,20 +32,7 @@ const YourComponent = () => {
     fetchData();
   }, []);
 
-  const columnDefs = [
-    { headerName: "Keyword", field: "keyword" },
-    { headerName: "ZIP", field: "zip" },
-    { headerName: "Country", field: "country" },
-    { headerName: "State", field: "state" },
-    { headerName: "Status", field: "status" },
-    { headerName: "Date Created", field: "dateCreated" },
-  ];
-
-  return (
-    <div className="ag-theme-alpine" style={{ height: 400, width: "100%" }}>
-      <AgGridReact rowData={rowData} columnDefs={columnDefs} />
-    </div>
-  );
+  return null;
 };
 
 export default YourComponent;

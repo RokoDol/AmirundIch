@@ -1,0 +1,23 @@
+
+.loggedin-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; 
+}
+
+
+.loggedin-content {
+  flex-grow: 1;
+}
+
+
+.loggedin-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+  z-index: 1000;
+}
