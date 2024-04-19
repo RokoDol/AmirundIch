@@ -1,4 +1,3 @@
-// NewTaskButtonBlue.js
 import React from "react";
 import WPlus from "../assets/PlusWhite.png";
 

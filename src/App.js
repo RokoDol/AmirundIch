@@ -44,7 +44,7 @@ function App() {
 
     window.addEventListener("popstate", handlePopstate);
 
-    // Handle beforeunload event to log out when the user exits the page
+    
     const handleBeforeUnload = (event) => {
       if (isLoggedIn) {
         localStorage.setItem("isLoggedIn", "true");
